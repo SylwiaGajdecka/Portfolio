@@ -6,20 +6,21 @@
 		<title>Portfolio Sylwia Gajdecka</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	</head>
 	<body>
-		<section class="header">
+		<section id="header">
 			<div class="container">
 				<div class="logo">
-					<div class="logo_letter">SG</div>
-					<div class="logo_name">
+					<div class="logo__letter">SG</div>
+					<div class="logo__name">
 						<p class="name">Sylwia</p>
 						<p class="surname">Gajdecka<p>
 					</div>
 				</div>
 				<nav>
 					<div class="nav">
-						<ul class="nav_list">
+						<ul class="nav__list">
 							<li><a href="#">Home</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
@@ -27,10 +28,10 @@
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
-					<div class="nav_toggle">
-						<div class="nav_toggle-line"></div>
-						<div class="nav_toggle-line"></div>
-						<div class="nav_toggle-line"></div>
+					<div class="nav__toggle">
+						<div class="nav__toggle--line"></div>
+						<div class="nav__toggle--line"></div>
+						<div class="nav__toggle--line"></div>
 					</div>
 				</nav>
 				<div class="clear"></div>
@@ -54,7 +55,7 @@
 				<div class="about__description">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ut ante sit amet ultricies. Cras feugiat, libero sed fringilla ullamcorper, massa leo euismod quam, a porttitor erat leo nec lorem. </p><br>
 					<p>Pellentesque nec erat dictum quam <span>ultrices</span> posuere eget at turpis. Morbi eu mollis tortor, ac cursus ipsum. Curabitur vitae nisi ut nibh finibus pretium. Aenean a malesuada felis. Suspendisse eleifend interdum nibh, mollis <span>fermentum nisl</span> facilisis vitae. Integer volutpat, felis sit amet sodales sagittis, dui enim pellentesque arcu, a hendrerit odio libero sed nisi. Phasellus non eros quis lacus rutrum molestie. </p><br>
-					<p><span>Morbi eu mollis tortor</span>, ac cursus ipsum. Curabitur vitae nisi ut nibh finibus pretium. Aenean a malesuada felis. Suspendisse eleifend interdum nibh, mollis fermentum nisl facilisis vitae.</p>
+					<p><span>Morbi eu mollis tortor</span>, ac cursus ipsum. Curabitur vitae nisi ut nibh finibus pretium. </p>
 				</div>
 				<div class="about__photo"></div>
 				<div class="clear"></div>
@@ -66,17 +67,25 @@
 				<div class="line"></div>
 				<div class="project project__1">
 					<div class="layer">
-						<div class="project__1-description">
+						<div class="project__description">
 							<h2>PSD to HTML</h2>
 							<div class="line-white"></div>
-							<p>Project with SASS, Bootstrap, jQuery</p>
-							<div class="btn btn--small"><a href="https://www.onet.pl/">Live</a></div>
-							<div class="btn btn--small"><a href="#about">Github</a></div>
+							<p>Project with SASS, Bootstrap, jQuery, Grunt</p>
+							<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-ActiveBox/" target="_blank" title="Live preview">Live</a></div>
+							<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-ActiveBox" target="_blank" title="Code preview">Github</a></div>
 						</div>
 					</div>
 				</div>
 				<div class="project project__2">
-					<div class="layer"></div>
+					<div class="layer">
+						<div class="project__description">
+							<h2>PSD to HTML</h2>
+							<div class="line-white"></div>
+							<p>Project with CSS3</p>
+							<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-PicturePerfect/" target="_blank" title="Live preview">Live</a></div>
+							<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-PicturePerfect" target="_blank" title="Code preview">Github</a></div>
+						</div>
+					</div>
 				</div>
 				<div class="project project__3">
 					<div class="layer"></div>
@@ -84,6 +93,54 @@
 				<div class="project project__4">
 					<div class="layer"></div>
 				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="container">
+				<h1>My skills</h1>
+				<div class="line"></div>
+				<div class="square">
+					<div class="square__in--2">
+						<div class="skills__description"><p>HTML5</p></div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="square__in--1">
+						<div class="skills__description">
+							<p>CSS3</p>
+							<i class="fa fa-css3" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="square__in--2">
+						<div class="skills__description"><p>RWD</p></div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="square__in--1">
+						<div class="skills__description"><p>Bootsrap</p></div>
+					</div>
+					<div class="square__in--2">
+						<div class="skills__description"><p>jQuery</p></div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="square__in--1">
+						<div class="skills__description"><p>JavaScript</p></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="square">
+					<div class="square__in--1">
+						<div class="skills__description"><p>Grunt</p></div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="square__in--1">
+						<div class="skills__description"><p>GIT</p></div>
+					</div>
+				</div>
+				<div class="clear margin-bottom"></div>
 			</div>
 		</section>
 	</body>

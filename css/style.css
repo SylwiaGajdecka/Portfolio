@@ -64,7 +64,8 @@ h1 {
 a {
   text-decoration: none;
   display: block;
-  color: bisque; }
+  color: bisque;
+  font-weight: 300; }
   a:hover {
     color: white;
     background: #ff9f2b;
@@ -77,7 +78,7 @@ a {
   width: 1170px;
   margin: 0 auto; }
 
-.header {
+#header {
   padding-top: 50px; }
 
 .logo {
@@ -85,7 +86,7 @@ a {
   height: 40px;
   float: left; }
 
-.logo_letter {
+.logo__letter {
   width: 40px;
   height: 40px;
   font-family: 'Architects Daughter', cursive;
@@ -96,7 +97,7 @@ a {
   display: inline-block;
   float: left; }
 
-.logo_name {
+.logo__name {
   display: inline-block;
   padding-left: 12px; }
 
@@ -117,11 +118,11 @@ nav {
   float: left;
   width: 66%; }
 
-.nav_list {
+.nav__list {
   text-transform: uppercase;
   background: #ff9311;
   float: left; }
-  .nav_list li {
+  .nav__list li {
     width: 145px;
     line-height: 40px;
     background: #ff9311;
@@ -130,25 +131,25 @@ nav {
     text-align: center;
     float: left; }
 
-.nav_toggle {
+.nav__toggle {
   width: 40px;
   height: 40px;
   background: #ff9311;
   color: white;
   float: right; }
-  .nav_toggle:hover {
+  .nav__toggle:hover {
     background: #ff9f2b;
     cursor: pointer; }
-  .nav_toggle:hover .nav_toggle-line {
+  .nav__toggle:hover .nav_toggle-line {
     background: white; }
 
-.nav_toggle-line {
+.nav__toggle--line {
   width: 20px;
   height: 2px;
   background: bisque;
   margin-bottom: 4px;
   margin-left: 10px; }
-  .nav_toggle-line:first-child {
+  .nav__toggle--line:first-child {
     margin-top: 14px; }
 
 .main-info {
@@ -192,6 +193,11 @@ nav {
     background: #ff9f2b;
     font-weight: 400; }
 
+#about p {
+  color: #878787;
+  font-size: 16px;
+  line-height: 1.5; }
+
 .about__description {
   width: 70%;
   padding-right: 30px;
@@ -206,11 +212,6 @@ nav {
   background-size: cover;
   float: right; }
 
-#about p {
-  color: #878787;
-  font-size: 16px;
-  line-height: 1.5; }
-
 .line {
   width: 30px;
   height: 2px;
@@ -222,7 +223,6 @@ nav {
   width: 45%;
   height: 350px;
   margin-right: 10%;
-  margin-bottom: 10%;
   background-size: cover;
   background-position: center;
   display: block;
@@ -231,14 +231,15 @@ nav {
   .project:nth-of-type(odd) {
     margin-right: 0; }
   .project:hover .layer {
-    opacity: 1;
-    cursor: pointer; }
+    opacity: 1; }
 
 .project__1 {
-  background-image: url("../img/project1.png"); }
+  background-image: url("../img/project1.png");
+  margin-bottom: 10%; }
 
 .project__2 {
-  background-image: url("../img/project2.png"); }
+  background-image: url("../img/project2.png");
+  margin-bottom: 10%; }
 
 .project__3 {
   background: magenta; }
@@ -264,18 +265,19 @@ nav {
     left: 20px;
     right: 20px; }
 
-.project__1-description {
+.project__description {
   text-align: center;
   position: absolute;
   top: 80px;
   bottom: 80px;
   left: 80px;
-  right: 80px; }
-  .project__1-description h2 {
+  right: 80px;
+  z-index: 2; }
+  .project__description h2 {
     color: #ff9311;
     font-size: 36px;
     text-transform: uppercase; }
-  .project__1-description p {
+  .project__description p {
     color: white;
     font-size: 18px;
     font-weight: 300; }
@@ -294,5 +296,65 @@ nav {
   width: 40px;
   height: 2px;
   margin: 20px auto; }
+
+#skills {
+  background: #f5f5f5;
+  padding-top: 50px; }
+
+.square {
+  width: 240px;
+  height: 240px;
+  float: left;
+  position: relative; }
+
+.square__in--1 {
+  width: 150px;
+  height: 150px;
+  background: white;
+  -ms-transform: rotate(45deg);
+    -ms-transform--webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+  .square__in--1:hover {
+    background: #ff9311; }
+  .square__in--1:hover .skills__description {
+    color: bisque;
+    transform: rotate(315deg); }
+
+.square__in--2 {
+  width: 150px;
+  height: 150px;
+  background: white;
+  -ms-transform: rotate(45deg);
+    -ms-transform--webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 160px;
+  left: 160px;
+  z-index: 2;
+  transition: .3s; }
+  .square__in--2:hover {
+    background: #ff9311; }
+  .square__in--2:hover .skills__description {
+    color: bisque;
+    transform: rotate(315deg); }
+
+.skills__description {
+  transform: rotate(-45deg);
+  line-height: 140px;
+  text-align: center;
+  font-size: 20px;
+  color: #ff9311;
+  transition: .5s; }
+
+.margin-bottom {
+  margin-bottom: 50px; }
+
+.fa {
+  position: absolute;
+  top: 0;
+  z-index: 100; }
 
 /*# sourceMappingURL=style.css.map */
