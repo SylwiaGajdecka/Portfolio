@@ -188,6 +188,14 @@ nav {
   .main-info__content span {
     color: #999; }
 
+.link-tel, .link-mail {
+  display: inline;
+  color: #424242; }
+  .link-tel:hover, .link-mail:hover {
+    background: none;
+    color: #424242;
+    font-weight: normal; }
+
 .btn {
   width: 170px;
   height: 44px;
