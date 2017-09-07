@@ -2,39 +2,43 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="device-width, initial-scale=1.0">
+		<meta name="viewport" width="device-width, initial-scale=1.0">
 		<title>Portfolio Sylwia Gajdecka</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:300,400,700" rel="stylesheet">
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<section id="header">
+		<section id="main">
 			<div class="container">
-				<div class="logo">
-					<div class="logo__letter">SG</div>
-					<div class="logo__name">
-						<p class="name">Sylwia</p>
-						<p class="surname">Gajdecka<p>
+				<div class="header">
+					<div class="container">
+					<div class="logo">
+						<div class="logo__letter">SG</div>
+						<div class="logo__name">
+							<p class="name">Sylwia</p>
+							<p class="surname">Gajdecka<p>
+						</div>
+					</div>
+					<nav>
+						<div class="nav">
+							<ul class="nav__list">
+								<li><a href="#main">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+						<div class="nav__toggle">
+							<div class="nav__toggle--line line--1"></div>
+							<div class="nav__toggle--line line--2"></div>
+							<div class="nav__toggle--line line--3"></div>
+						</div>
+					</nav>
+					<div class="clear"></div>
 					</div>
 				</div>
-				<nav>
-					<div class="nav">
-						<ul class="nav__list">
-							<li><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#skills">Skills</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-					<div class="nav__toggle">
-						<div class="nav__toggle--line"></div>
-						<div class="nav__toggle--line"></div>
-						<div class="nav__toggle--line"></div>
-					</div>
-				</nav>
-				<div class="clear"></div>
 				<div class="main-info">
 					<div class="main-info__photo"></div>
 					<div class="main-info__content">
@@ -42,7 +46,7 @@
 						<p><span>Phone:</span> 666 777 888</p>
 						<p><span>Email adress:</span> sylwia.gajdecka@wp.pl</p>
 						<p><span>Home city:</span> Cracow</p>
-						<div class="btn"><a href="#">Contact me</a></div>
+						<div class="btn"><a href="#contact">Contact me</a></div>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -87,12 +91,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="project project__3">
-					<div class="layer"></div>
-				</div>
-				<div class="project project__4">
-					<div class="layer"></div>
-				</div>
 				<div class="clear"></div>
 			</div>
 		</section>
@@ -102,46 +100,77 @@
 				<div class="line"></div>
 				<div class="square">
 					<div class="square__in--2">
-						<div class="skills__description"><p>HTML5</p></div>
+						<div class="icon icon--html"></div>
 					</div>
 				</div>
 				<div class="square">
 					<div class="square__in--1">
-						<div class="skills__description">
-							<p>CSS3</p>
-							<i class="fa fa-css3" aria-hidden="true"></i>
-						</div>
+						<div class="icon icon--css"></div>
 					</div>
 					<div class="square__in--2">
-						<div class="skills__description"><p>RWD</p></div>
+						<div class="icon icon--rwd"><p>RWD</p></div>
 					</div>
 				</div>
 				<div class="square">
 					<div class="square__in--1">
-						<div class="skills__description"><p>Bootsrap</p></div>
+						<div class="icon icon--bootstrap"></div>
 					</div>
 					<div class="square__in--2">
-						<div class="skills__description"><p>jQuery</p></div>
+						<div class="icon icon--jquery"></div>
 					</div>
 				</div>
 				<div class="square">
 					<div class="square__in--1">
-						<div class="skills__description"><p>JavaScript</p></div>
+						<div class="icon icon--js"></div>
 					</div>
 				</div>
 				<div class="clear"></div>
 				<div class="square">
 					<div class="square__in--1">
-						<div class="skills__description"><p>Grunt</p></div>
+						<div class="icon icon--grunt"></div>
 					</div>
 				</div>
 				<div class="square">
 					<div class="square__in--1">
-						<div class="skills__description"><p>GIT</p></div>
+						<div class="icon icon--git"></div>
 					</div>
 				</div>
 				<div class="clear margin-bottom"></div>
 			</div>
 		</section>
+		<section id="contact">
+			<div class="container">
+				<h1>Contact</h1>
+				<div class="line"></div>
+				<div class="form">
+					<form>
+						<label><span>Your Name</span><input type="text" name="name"></label>
+						<label><span>Email</span><input type="Email" name="email"></label>
+						<label><span>Phone Number</span><input type="number" name="number"></label>
+						<label><span>Message</span><textarea name="message"></textarea></label>			
+						<input class="submit" name="submit" type="submit" value="send">
+						<div class="clear"></div>
+					</form>
+				</div>
+				<div class="contact__data">
+					<div class="contact__data-content">
+						<p><span>Name:</span> Sylwia Gajdecka</p>
+						<p><span>Phone:</span> 666 777 888</p>
+						<p><span>Email adress:</span> sylwia.gajdecka@wp.pl</p>
+						<p><span>Home city:</span> Cracow</p>
+					</div>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40998.308442579284!2d19.92538628605918!3d50.041444933309904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1504607081116" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<div class="footer">
+			<p>Copyright &copy <span>Sylwia Gajdecka</span></p>
+		</div>
+		<a href="#main"><div class="arrow-up unvisible"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></div></a>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
 	</body>
 <html>
