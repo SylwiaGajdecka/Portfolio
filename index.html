@@ -11,44 +11,48 @@
 	<body>
 		<section id="main">
 			<div class="container">
-				<div class="header">
-					<div class="container">
-					<div class="logo">
-						<div class="logo__letter">SG</div>
-						<div class="logo__name">
-							<p class="name">Sylwia</p>
-							<p class="surname">Gajdecka<p>
+				<div class="row">
+					<div class="header">
+						<div class="col-4">
+							<div class="logo">
+								<div class="logo__letter">SG</div>
+								<div class="logo__name">
+									<p class="name">Sylwia</p>
+									<p class="surname">Gajdecka</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<nav>
-						<div class="nav">
-							<ul class="nav__list">
-								<li><a href="#main">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#skills">Skills</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
+						<div class="col-8">
+							<nav>
+								<div class="nav">
+									<ul class="nav__list">
+										<li><a href="#main">Home</a></li>
+										<li><a href="#about">About</a></li>
+										<li><a href="#portfolio">Portfolio</a></li>
+										<li><a href="#skills">Skills</a></li>
+										<li><a href="#contact">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+							<div class="clear"></div>
 						</div>
-						<div class="nav__toggle">
-							<div class="nav__toggle--line line--1"></div>
-							<div class="nav__toggle--line line--2"></div>
-							<div class="nav__toggle--line line--3"></div>
-						</div>
-					</nav>
-					<div class="clear"></div>
 					</div>
 				</div>
 				<div class="main-info">
-					<div class="main-info__photo"></div>
-					<div class="main-info__content">
-						<p><span>Name: </span>Sylwia Gajdecka</p>
-						<p><span>Phone: </span><a class="link-tel" href="tel:666 777 888">666 777 888</p>
-						<p><span>Email adress: </span><a class="link-mail" href="mailto:sylwia.gajdecka@wp.pl">sylwia.gajdecka@wp.pl</a></p>
-						<p><span>Home city: </span>Cracow</p>
-						<div class="btn"><a href="#contact">Contact me</a></div>
+					<div class="row">
+						<div class="col-4">
+							<div class="main-info__photo"></div>
+						</div>
+						<div class="col-8">
+							<div class="main-info__content">
+								<p><span>Name: </span>Sylwia Gajdecka</p>
+								<p><span>Phone: </span><a class="link-tel" href="tel:666777888">666 777 888</p>
+								<p><span>Email adress: </span><a class="link-mail" href="mailto:sylwia.gajdecka@wp.pl">sylwia.gajdecka@wp.pl</a></p>
+								<p><span>Home city: </span>Cracow</p>
+								<div class="btn"><a href="#contact">Contact me</a></div>
+							</div>
+						</div>
 					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
 		</section>
@@ -56,42 +60,49 @@
 			<div class="container">
 				<h1>About me</h1>
 				<div class="line"></div>
-				<div class="about__description">
-					<p>Nazywam się Sylwia Gajdecka i od sześciu miesięcy zgłębiam tajniki tworzenia stron internetowych. Po wielu latach w końcu odnalazłam to, w czym czuję się naprawdę świetnie.</p><br>
-					<p>W swojej pracy kieruję się szczególnie dbałością o szczegóły - <span>Pixel Perfect</span>. Programuję strony wyświetlające się poprawnie na wszystkich urządzeniach (<span>RWD</span>) stosując podejście Graceful Degradation. Jestem elastyczna, więc jeśli trzeba - <span>Mobile First</span>.</p><br>
-					<p>Czyny mówią więcej niż słowa, więc zapraszam do zapoznania się z moimi prjektami, które wykonałam w trakcie nauki. Wciąż zdobywam wiedzę, więc portfolio już wkrótce powiększy się o kolejne projekty.</p>
+				<div class="row">
+					<div class="col-8">
+						<div class="about__description">
+							<p>Nazywam się Sylwia Gajdecka i od sześciu miesięcy zgłębiam tajniki tworzenia stron internetowych. Po wielu latach w końcu odnalazłam to, w czym czuję się naprawdę świetnie.</p><br>
+							<p>W swojej pracy kieruję się szczególnie dbałością o szczegóły - <span>Pixel Perfect</span>. Programuję strony wyświetlające się poprawnie na wszystkich urządzeniach (<span>RWD</span>) stosując podejście Graceful Degradation. Jestem elastyczna, więc jeśli trzeba - <span>Mobile First</span>.</p><br>
+							<p>Czyny mówią więcej niż słowa, więc zapraszam do zapoznania się z moimi prjektami, które wykonałam w trakcie nauki. Wciąż zdobywam wiedzę, więc portfolio już 	wkrótce powiększy się o kolejne projekty.</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about__photo"></div>
+					</div>
 				</div>
-				<div class="about__photo"></div>
-				<div class="clear"></div>
 			</div>
 		</section>
 		<section id="portfolio">
 			<div class="container">
 				<h1>Portfolio</h1>
 				<div class="line"></div>
-				<div class="project project__1">
-					<div class="layer">
-						<div class="project__description">
-							<h2>PSD to HTML</h2>
-							<div class="line-white"></div>
-							<p>Project with SASS, Bootstrap, jQuery, Grunt</p>
-							<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-ActiveBox/" target="_blank" title="Live preview">Live</a></div>
-							<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-ActiveBox" target="_blank" title="Code preview">Github</a></div>
+				<div class="row">
+					<div class="col-5 project project__1">
+						<div class="layer">
+							<div class="project__description">
+								<h2>PSD to HTML</h2>
+								<div class="line-white"></div>
+								<p>Project with SASS, Bootstrap, jQuery, Grunt</p>
+								<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-ActiveBox/" target="_blank" title="Live preview">Live</a></div>
+								<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-ActiveBox" target="_blank" title="Code preview">Github</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-2"></div>
+					<div class="col-5 project project__2">
+						<div class="layer">
+							<div class="project__description">
+								<h2>PSD to HTML</h2>
+								<div class="line-white"></div>
+								<p>Project with CSS3</p>
+								<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-PicturePerfect/" target="_blank" title="Live preview">Live</a></div>
+								<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-PicturePerfect" target="_blank" title="Code preview">Github</a></div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="project project__2">
-					<div class="layer">
-						<div class="project__description">
-							<h2>PSD to HTML</h2>
-							<div class="line-white"></div>
-							<p>Project with CSS3</p>
-							<div class="btn btn--small"><a href="https://sylwiagajdecka.github.io/PSD-PicturePerfect/" target="_blank" title="Live preview">Live</a></div>
-							<div class="btn btn--small"><a href="https://github.com/SylwiaGajdecka/PSD-PicturePerfect" target="_blank" title="Code preview">Github</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
 			</div>
 		</section>
 		<section id="skills">
@@ -142,28 +153,38 @@
 			<div class="container">
 				<h1>Contact</h1>
 				<div class="line"></div>
-				<div class="form">
-					<form>
-						<label><span>Your Name</span><input type="text" name="name"></label>
-						<label><span>Email</span><input type="Email" name="email"></label>
-						<label><span>Phone Number</span><input type="number" name="number"></label>
-						<label><span>Message</span><textarea name="message"></textarea></label>			
-						<input class="submit" name="submit" type="submit" value="send">
-						<div class="clear"></div>
-					</form>
-				</div>
-				<div class="contact__data">
-					<div class="contact__data-content">
-						<p><span>Name:</span> Sylwia Gajdecka</p>
-						<p><span>Phone:</span> 666 777 888</p>
-						<p><span>Email adress:</span> sylwia.gajdecka@wp.pl</p>
-						<p><span>Home city:</span> Cracow</p>
+				<div class="row">
+					<div class="col-6">
+						<div class="form">
+							<form action="mailto:sylwia.gajdecka@wp.pl" method="post" enctype="text/plain">
+								<div>
+									<label><span>Your Name</span><input type="text" name="name"></label>
+									<label><span>Email</span><input type="Email" name="email"></label>
+									<label><span>Phone Number</span><input type="number" name="number"></label>
+									<label><span>Message</span><textarea name="message"></textarea></label>			
+									<input class="submit" name="submit" type="submit" value="send">
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40998.308442579284!2d19.92538628605918!3d50.041444933309904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1504607081116" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="col-6">
+						<div class="row">
+							<div class="contact__data">
+								<div class="contact__data-content">
+									<p><span>Name: </span>Sylwia Gajdecka</p>
+									<p><span>Phone: </span><a class="link-tel" href="tel:666777888">666 777 888</a></p>
+									<p><span>Email adress: </span><a class="link-mail" href="mailto:sylwia.gajdecka@wp.pl">sylwia.gajdecka@wp.pl</a></p>
+									<p><span>Home city: </span>Cracow</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40998.308442579284!2d19.92538628605918!3d50.041444933309904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1504607081116" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</section>
 		<div class="footer">

@@ -1,4 +1,5 @@
 @import reset
+@import grid
 
 $orange: #ff9311
 $orange-light: lighten($orange, 35%)
@@ -36,7 +37,8 @@ a
 	clear: both
 
 .container
-	width: 1170px
+	width: 100%
+	max-width: 1170px
 	margin: 0 auto
 
 #main 
@@ -51,7 +53,6 @@ a
 	z-index: 100
 
 .logo
-	width: 34%
 	height: 40px
 	float: left
 
@@ -82,17 +83,12 @@ a
 	text-transform: uppercase
 	letter-spacing: 2px
 
-nav
-	display: inline-block
-	float: left
-	width: 66%
-
 .nav__list
 	text-transform: uppercase
 	background: $orange
 	float: left
 	li 
-		width: 145px
+		width: 151.5px
 		line-height: 40px
 		background: $orange
 		font-size: 14px
@@ -128,23 +124,25 @@ nav
 .main-info
 	margin-top: 50px
 
+.main-info .col-4
+	padding-right: 0
+
+.main-info .col-8
+	padding-left: 0
+
 .main-info__photo
-	width: 20%
 	height: 180px
 	background-image: url('../img/photo5.jpg')
 	background-size: cover
 	background-position: center
-	float: left
 
 .main-info__content
-	width: 80%
 	padding: 28px 0 28px 28px
 	background-color: $gray
 	color: #424242
 	font-size: 16px
 	font-weight: 300
 	line-height: 31px
-	float: left
 	position: relative
 	span 
 		color: #999
@@ -155,7 +153,6 @@ nav
 	&:hover
 		background: none
 		color: #424242
-		font-weight: normal
 
 .btn
 	width: 170px
@@ -181,18 +178,13 @@ nav
 		line-height: 1.5
 
 .about__description
-	width: 70%
-	padding-right: 30px
-	float: left
 	span 
 		font-weight: bold
 
 .about__photo
-	width: 30%
-	height: 200px
+	height: 280px
 	background-image: url('../img/about.jpeg')
 	background-size: cover
-	float: right
 
 .line
 	width: 30px
@@ -202,16 +194,14 @@ nav
 	margin-bottom: 40px
 
 .project
-	width: 45%
-	height: 350px
-	margin-right: 10%
+	height: 400px
 	background-size: cover
 	background-position: center
 	display: block
-	position: relative
-	float: left
-	&:nth-of-type(odd)
-		margin-right: 0		
+	position: relative	
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(173,168,173,1)
+	-moz-box-shadow: 5px 5px 5px 0px rgba(173,168,173,1)
+	box-shadow: 5px 5px 5px 0px rgba(173,168,173,1)
 	&:hover .layer
 		opacity: 1
 
@@ -222,12 +212,6 @@ nav
 .project__2
 	background-image: url('../img/project2.png')
 	margin-bottom: 10%
-
-.project__3
-	background: magenta
-
-.project__4
-	background: aqua
 
 .layer
 	position: absolute
@@ -404,16 +388,14 @@ nav
 	margin-left: -15px
 	margin-top: -16px
 
+#contact
+	padding-bottom: 50px
+
 .form
-	width: 60%
-	height: 300px
 	margin-top: 8px
-	float: left
 
 .contact__data
-	width: 40%
-	height: 350px
-	float: left
+	padding-bottom: 20px
 
 .contact__data-content
 	height: 50%
@@ -423,9 +405,6 @@ nav
 	line-height: 31px
 	span 
 		color: #999
-
-.map
-	height: 50%
 
 label
 	display: block
@@ -452,7 +431,7 @@ label
 .submit
 	width: 100px
 	height: 30px
-	margin-left: 420px
+	margin-left: 251px
 	background-color: $orange
 	color: $orange-light
 	text-transform: uppercase

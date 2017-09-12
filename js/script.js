@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 	$('a[href^="#"]').click(function(event){
 		event.preventDefault();
 		$('body').animate({
@@ -24,5 +24,10 @@ $(function(){
 		}
 	})
 
-	$('.fa-arrow-up').animate(borderWidth, )
+	$(window).scroll(function(){
+		var top = $(window).scrollTop();
+		if(){
+			
+		}
+	})
 })
